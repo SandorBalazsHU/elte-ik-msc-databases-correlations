@@ -1,0 +1,58 @@
+PS C:\Users\sandorbalazs\Desktop\public\CD_for_static_data\CD_execs> java -cp paper-experiments-one-run-with-print.jar SimpleTest stock_tech.csv multipearson 0.93 0.05 10 1 2
+number of threads: 11
+
+--------------------- new run starting ---------------------
+
+Starting time 2022-11-17T00:03:01.886119900
+dataset: n_vec = 20; n_dim = 253
+parallel evaluation enabled: true
+parameters -- tau (correlation threshold) = 0.93; minJump = 0.05; start epsilon = 9.740379869389079; max hierarchical clustering levels = 20; epsilon multiplier per level = 0.8; k: 10; clustering retries: 50
+approximation shrinkage factor is 0.0; max approximation radius threshold: 52.754146756439916 topK: 10
+maxPLeft: 1, maxPRight: 2
+Clustering takes 0
+correlation threshold updated to 0.9576239708121892 after pairwise correlations have been processed. Number of positives so far: 10
+.
+
+initial phase with shrink UB finished at time 00:03:01.922079300. Runtime so far: 0 seconds.
+positives so far: 10
+found 10 positives at time 00:03:01.928079900. Runtime so far: 0 seconds. Bucket 15/50 contained 1 CCs that were processed.
+found 10 positives at time 00:03:01.929078500. Runtime so far: 0 seconds. Bucket 19/50 contained 1 CCs that were processed.
+found 10 positives at time 00:03:01.933082500. Runtime so far: 0 seconds. Bucket 20/50 contained 1 CCs that were processed.
+(Tau updated to 0.9598631880790487)
+found 10 positives at time 00:03:01.933082500. Runtime so far: 0 seconds. Bucket 21/50 contained 1 CCs that were processed.
+found 10 positives at time 00:03:01.934078300. Runtime so far: 0 seconds. Bucket 24/50 contained 1 CCs that were processed.
+found 10 positives at time 00:03:01.934078300. Runtime so far: 0 seconds. Bucket 27/50 contained 1 CCs that were processed.
+found 10 positives at time 00:03:01.934078300. Runtime so far: 0 seconds. Bucket 34/50 contained 1 CCs that were processed.
+found 10 positives at time 00:03:01.935079300. Runtime so far: 0 seconds. Bucket 39/50 contained 1 CCs that were processed.
+found 10 positives at time 00:03:01.935079300. Runtime so far: 0 seconds. Bucket 40/50 contained 1 CCs that were processed.
+found 10 positives at time 00:03:01.936078300. Runtime so far: 0 seconds. Bucket 42/50 contained 2 CCs that were processed.
+found 10 positives at time 00:03:01.936078300. Runtime so far: 0 seconds. Bucket 50/50 contained 1 CCs that were processed.
+number of positives: 10 at time: 00:03:01.939079. Runtime: 0 seconds
+number of clustering levels: 20; #clusters in final layer: 0
+Ending time 2022-11-17T00:03:01.940077900
+Total duration seconds 0
+Number of positives: 10
+lowest corr in positives: 0.9598631880790487
+
+Total number of positives: 10
+Interesting subsets:
+
+(AMD, ), (NVDA, )                                        corr: 0.962. Max subset corr: -1.0
+(GOOG, ), (GOOGL, )                                      corr: 0.999. Max subset corr: -1.0
+(GOOG, ), (MSFT, )                                       corr: 0.969. Max subset corr: -1.0
+(GOOGL, ), (GOOG, )                                      corr: 0.999. Max subset corr: -1.0
+(GOOGL, ), (MSFT, )                                      corr: 0.968. Max subset corr: -1.0
+(MSFT, ), (GOOG, )                                       corr: 0.969. Max subset corr: -1.0
+(MSFT, ), (GOOGL, )                                      corr: 0.968. Max subset corr: -1.0
+(NVDA, ), (AMD, )                                        corr: 0.962. Max subset corr: -1.0
+(NVDA, ), (AVGO, NFLX, )                                 corr: 0.96. Max subset corr: 0.881
+(NVDA, ), (INTC, NFLX, )                                 corr: 0.974. Max subset corr: 0.894
+
+https://finance.yahoo.com/quote/AAPL/history?period1=1593129600&period2=1668556800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true
+https://api.nasdaq.com/api/screener/stocks?tableonly=true&limit=6000&exchange=NASDAQ
+
+(AMD,   ), (NVDA, )                                       corr: 0.962. Max subset corr: -1.0
+(GOOG,  ), (GOOGL,)                                       corr: 0.999. Max subset corr: -1.0
+(GOOG,  ), (MSFT, )                                       corr: 0.969. Max subset corr: -1.0
+(GOOGL, ), (MSFT, )                                       corr: 0.968. Max subset corr: -1.0
+(NVDA,  ), (NFLX, )                                       corr: 0.96. Max subset corr: 0.881

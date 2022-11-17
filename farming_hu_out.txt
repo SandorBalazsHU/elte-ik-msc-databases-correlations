@@ -1,0 +1,62 @@
+PS C:\Users\sandorbalazs\Desktop\public\CD_for_static_data\CD_execs> java -cp paper-experiments-one-run-with-print.jar SimpleTest farming_hu.csv multipearson 0.9 0.05 10 1 2
+number of threads: 11
+
+--------------------- new run starting ---------------------
+
+Starting time 2022-11-16T22:28:15.765063800
+dataset: n_vec = 13; n_dim = 32
+parallel evaluation enabled: true
+parameters -- tau (correlation threshold) = 0.9; minJump = 0.05; start epsilon = 3.4641016151377544; max hierarchical clustering levels = 20; epsilon multiplier per level = 0.8; k: 10; clustering retries: 50
+approximation shrinkage factor is 0.0; max approximation radius threshold: 18.76166303929372 topK: 10
+maxPLeft: 1, maxPRight: 2
+Clustering takes 0
+correlation threshold updated to 0.9 after pairwise correlations have been processed. Number of positives so far: 10
+.
+
+initial phase with shrink UB finished at time 22:28:15.796064800. Runtime so far: 0 seconds.
+positives so far: 10
+found 10 positives at time 22:28:15.806062800. Runtime so far: 0 seconds. Bucket 5/50 contained 1 CCs that were processed.
+(Tau updated to 0.9077783457575785)
+found 10 positives at time 22:28:15.807063700. Runtime so far: 0 seconds. Bucket 9/50 contained 1 CCs that were processed.
+found 10 positives at time 22:28:15.808073300. Runtime so far: 0 seconds. Bucket 14/50 contained 4 CCs that were processed.
+(Tau updated to 0.9105223047964796)
+found 10 positives at time 22:28:15.808073300. Runtime so far: 0 seconds. Bucket 16/50 contained 1 CCs that were processed.
+found 10 positives at time 22:28:15.808073300. Runtime so far: 0 seconds. Bucket 17/50 contained 1 CCs that were processed.
+found 10 positives at time 22:28:15.809066100. Runtime so far: 0 seconds. Bucket 18/50 contained 1 CCs that were processed.
+found 10 positives at time 22:28:15.809066100. Runtime so far: 0 seconds. Bucket 20/50 contained 3 CCs that were processed.
+found 10 positives at time 22:28:15.809066100. Runtime so far: 0 seconds. Bucket 23/50 contained 1 CCs that were processed.
+found 10 positives at time 22:28:15.810063900. Runtime so far: 0 seconds. Bucket 29/50 contained 1 CCs that were processed.
+found 10 positives at time 22:28:15.810063900. Runtime so far: 0 seconds. Bucket 30/50 contained 1 CCs that were processed.
+found 10 positives at time 22:28:15.810063900. Runtime so far: 0 seconds. Bucket 39/50 contained 2 CCs that were processed.
+found 10 positives at time 22:28:15.810063900. Runtime so far: 0 seconds. Bucket 40/50 contained 1 CCs that were processed.
+found 10 positives at time 22:28:15.811064300. Runtime so far: 0 seconds. Bucket 42/50 contained 1 CCs that were processed.
+found 10 positives at time 22:28:15.811064300. Runtime so far: 0 seconds. Bucket 45/50 contained 1 CCs that were processed.
+found 10 positives at time 22:28:15.811064300. Runtime so far: 0 seconds. Bucket 48/50 contained 1 CCs that were processed.
+number of positives: 10 at time: 22:28:15.814063300. Runtime: 0 seconds
+number of clustering levels: 20; #clusters in final layer: 0
+Ending time 2022-11-16T22:28:15.814063300
+Total duration seconds 0
+Number of positives: 10
+lowest corr in positives: 0.9105223047964796
+
+Total number of positives: 10
+Interesting subsets:
+
+(ARPA,     ), (BUZA,      )                                       corr: 0.949. Max subset corr: -1.0
+(ARPA,     ), (ROZS,      )                                       corr: 0.911. Max subset corr: -1.0
+(BURGONYA, ), (CUKORREPA, )                                       corr: 0.916. Max subset corr: -1.0
+(BUZA,     ), (ARPA,      )                                       corr: 0.949. Max subset corr: -1.0
+(CUKORREPA,), (BURGONYA,  )                                       corr: 0.916. Max subset corr: -1.0
+(KUKORICA, ), (SZOJA,     )                                       corr: 0.932. Max subset corr: -1.0
+(ROZS,     ), (ARPA,      )                                       corr: 0.911. Max subset corr: -1.0
+(SZOJA,    ), (KUKORICA,  )                                       corr: 0.932. Max subset corr: -1.0
+(REPCE,    ), (ROZS,      )                                       corr: 0.915. Max subset corr: 0.853
+(ROZS,     ), (REPCE,     )                                       corr: 0.943. Max subset corr: 0.89
+
+https://www.ksh.hu/stadat_files/mez/hu/mez0018.html
+
+(BUZA,     ), (ARPA,      )                                       corr: 0.949. Max subset corr: -1.0
+(ARPA,     ), (ROZS,      )                                       corr: 0.911. Max subset corr: -1.0
+(BURGONYA, ), (CUKORREPA, )                                       corr: 0.916. Max subset corr: -1.0
+(KUKORICA, ), (SZOJA,     )                                       corr: 0.932. Max subset corr: -1.0
+(REPCE,    ), (ROZS,      )                                       corr: 0.915. Max subset corr: 0.853

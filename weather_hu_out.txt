@@ -1,0 +1,47 @@
+PS C:\Users\sandorbalazs\Desktop\public\CD_for_static_data\CD_execs> java -cp paper-experiments-one-run-with-print.jar SimpleTest weather_hu.csv multipearson 0.98 0.05 10 1 2
+number of threads: 11
+
+--------------------- new run starting ---------------------
+
+Starting time 2022-11-16T21:03:04.410839600
+dataset: n_vec = 10; n_dim = 44195
+parallel evaluation enabled: true
+parameters -- tau (correlation threshold) = 0.98; minJump = 0.05; start epsilon = 128.73664979328925; max hierarchical clustering levels = 20; epsilon multiplier per level = 0.8; k: 10; clustering retries: 50
+approximation shrinkage factor is 0.0; max approximation radius threshold: 697.240991336568 topK: 10
+maxPLeft: 1, maxPRight: 2
+Clustering takes 0
+correlation threshold updated to 0.9878733479681092 after pairwise correlations have been processed. Number of positives so far: 10
+.
+
+initial phase with shrink UB finished at time 21:03:04.453841500. Runtime so far: 0 seconds.
+positives so far: 10
+found 10 positives at time 21:03:04.457840500. Runtime so far: 0 seconds. Bucket 18/50 contained 1 CCs that were processed.
+number of positives: 10 at time: 21:03:04.460839300. Runtime: 0 seconds
+number of clustering levels: 20; #clusters in final layer: 0
+Ending time 2022-11-16T21:03:04.460839300
+Total duration seconds 0
+Number of positives: 10
+lowest corr in positives: 0.9878733479681092
+
+Total number of positives: 10
+Interesting subsets:
+
+(DEBRECEN,    ), (NYIREGYHAZA, )                                    corr: 0.992. Max subset corr: -1.0
+(DEBRECEN,    ), (TURKEVE, )                                        corr: 0.991. Max subset corr: -1.0
+(MISKOLC,     ), (NYIREGYHAZA, )                                    corr: 0.988. Max subset corr: -1.0
+(NYIREGYHAZA, ), (DEBRECEN, )                                       corr: 0.992. Max subset corr: -1.0
+(NYIREGYHAZA, ), (MISKOLC, )                                        corr: 0.988. Max subset corr: -1.0
+(SOPRON,      ), (SZOMBATHELY, )                                    corr: 0.988. Max subset corr: -1.0
+(SZEGED,      ), (TURKEVE, )                                        corr: 0.989. Max subset corr: -1.0
+(SZOMBATHELY, ), (SOPRON, )                                         corr: 0.988. Max subset corr: -1.0
+(TURKEVE,     ), (DEBRECEN, )                                       corr: 0.991. Max subset corr: -1.0
+(TURKEVE,     ), (SZEGED, )                                         corr: 0.989. Max subset corr: -1.0
+PS C:\Users\sandorbalazs\Desktop\public\CD_for_static_data\CD_execs>
+
+https://odp.met.hu/climate/homogenized_data/station_data_series/from_1901/maximum_temperature/
+
+(DEBRECEN,    ), (NYIREGYHAZA, )                                    corr: 0.992. Max subset corr: -1.0
+(DEBRECEN,    ), (TURKEVE, )                                        corr: 0.991. Max subset corr: -1.0
+(NYIREGYHAZA, ), (MISKOLC, )                                        corr: 0.988. Max subset corr: -1.0
+(SZEGED,      ), (TURKEVE, )                                        corr: 0.989. Max subset corr: -1.0
+(SZOMBATHELY, ), (SOPRON, )                                         corr: 0.988. Max subset corr: -1.0

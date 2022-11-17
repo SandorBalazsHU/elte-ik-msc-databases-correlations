@@ -1,0 +1,57 @@
+PS C:\Users\sandorbalazs\Desktop\public\CD_for_static_data\CD_execs> java -cp paper-experiments-one-run-with-print.jar SimpleTest crypto.csv multipearson 0.9 0.05 1000 1 2
+number of threads: 11
+
+--------------------- new run starting ---------------------
+
+Starting time 2022-11-17T01:57:49.638032
+dataset: n_vec = 12; n_dim = 2133
+parallel evaluation enabled: true
+parameters -- tau (correlation threshold) = 0.9; minJump = 0.05; start epsilon = 28.282061452447202; max hierarchical clustering levels = 20; epsilon multiplier per level = 0.8; k: 10; clustering retries: 50
+approximation shrinkage factor is 0.0; max approximation radius threshold: 153.1763689346369 topK: 1000
+maxPLeft: 1, maxPRight: 2
+Clustering takes 0
+correlation threshold updated to 0.9 after pairwise correlations have been processed. Number of positives so far: 0
+.
+
+initial phase with shrink UB finished at time 01:57:49.668030500. Runtime so far: 0 seconds.
+positives so far: 0
+found 3 positives at time 01:57:49.675033400. Runtime so far: 0 seconds. Bucket 9/50 contained 2 CCs that were processed.
+found 3 positives at time 01:57:49.675033400. Runtime so far: 0 seconds. Bucket 14/50 contained 1 CCs that were processed.
+found 3 positives at time 01:57:49.675033400. Runtime so far: 0 seconds. Bucket 16/50 contained 3 CCs that were processed.
+found 3 positives at time 01:57:49.675033400. Runtime so far: 0 seconds. Bucket 17/50 contained 1 CCs that were processed.
+found 3 positives at time 01:57:49.676032400. Runtime so far: 0 seconds. Bucket 18/50 contained 4 CCs that were processed.
+found 3 positives at time 01:57:49.676032400. Runtime so far: 0 seconds. Bucket 19/50 contained 4 CCs that were processed.
+found 3 positives at time 01:57:49.677031400. Runtime so far: 0 seconds. Bucket 21/50 contained 4 CCs that were processed.
+found 3 positives at time 01:57:49.677031400. Runtime so far: 0 seconds. Bucket 22/50 contained 4 CCs that were processed.
+found 3 positives at time 01:57:49.677031400. Runtime so far: 0 seconds. Bucket 23/50 contained 1 CCs that were processed.
+found 3 positives at time 01:57:49.677031400. Runtime so far: 0 seconds. Bucket 24/50 contained 1 CCs that were processed.
+found 3 positives at time 01:57:49.678032. Runtime so far: 0 seconds. Bucket 26/50 contained 2 CCs that were processed.
+found 3 positives at time 01:57:49.678032. Runtime so far: 0 seconds. Bucket 27/50 contained 3 CCs that were processed.
+found 3 positives at time 01:57:49.678032. Runtime so far: 0 seconds. Bucket 28/50 contained 3 CCs that were processed.
+found 3 positives at time 01:57:49.679030900. Runtime so far: 0 seconds. Bucket 29/50 contained 5 CCs that were processed.
+found 3 positives at time 01:57:49.679030900. Runtime so far: 0 seconds. Bucket 30/50 contained 1 CCs that were processed.
+found 3 positives at time 01:57:49.679030900. Runtime so far: 0 seconds. Bucket 31/50 contained 1 CCs that were processed.
+found 3 positives at time 01:57:49.679030900. Runtime so far: 0 seconds. Bucket 33/50 contained 1 CCs that were processed.
+found 3 positives at time 01:57:49.680031700. Runtime so far: 0 seconds. Bucket 39/50 contained 1 CCs that were processed.
+found 3 positives at time 01:57:49.680031700. Runtime so far: 0 seconds. Bucket 41/50 contained 1 CCs that were processed.
+found 3 positives at time 01:57:49.680031700. Runtime so far: 0 seconds. Bucket 50/50 contained 1 CCs that were processed.
+number of positives: 3 at time: 01:57:49.684031700. Runtime: 0 seconds
+number of clustering levels: 20; #clusters in final layer: 0
+Ending time 2022-11-17T01:57:49.684031700
+Total duration seconds 0
+Number of positives: 3
+lowest corr in positives: 0.9032829606611273
+
+Total number of positives: 3
+Interesting subsets:
+
+(bitcoin, ), (ethereum, solana, )                                        corr: 0.941. Max subset corr: 0.841
+(polkadot, ), (bitcoin, cardano, )                                       corr: 0.903. Max subset corr: 0.848
+(polkadot, ), (ethereum, cardano, )                                      corr: 0.958. Max subset corr: 0.898
+PS C:\Users\sandorbalazs\Desktop\public\CD_for_static_data\CD_execs>
+
+https://api.coingecko.com/api/v3/coins/solana/market_chart?vs_currency=usd&days=90
+
+(bitcoin,  ), (ethereum,)                                      corr: 0.941. Max subset corr: 0.841
+(polkadot, ), (bitcoin, )                                      corr: 0.903. Max subset corr: 0.848
+(polkadot, ), (ethereum,)                                      corr: 0.958. Max subset corr: 0.898
